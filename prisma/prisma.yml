@@ -1,5 +1,6 @@
 # The HTTP endpoint for your Prisma API
-#endpoint: ''endpoint: https://us1.prisma.sh/robert-51038e/googlebot-react-serve/dev
+#endpoint: ''
+endpoint: https://us1.prisma.sh/robert-51038e/googlebot-react-serve/dev
 
 
 # Points to the file that contains your datamodel
@@ -9,3 +10,6 @@ datamodel: datamodel.prisma
 generate:
   - generator: javascript-client
     output: ../generated/prisma-client
+hooks:
+  post-deploy:
+    - prisma generate
