@@ -46,7 +46,7 @@ async function login(parent, args, context, info) {
     }
 
     // 2
-    const valid = await bcrypt.compare(args.password, user.password)
+    const valid = await bcrypt.compare(args.password, user.password) // password: graphql
     if (!valid) {
         throw new Error('Invalid password')
     }
