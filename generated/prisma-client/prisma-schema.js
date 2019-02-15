@@ -177,6 +177,7 @@ input LinkUpdateManyWithoutPostedByInput {
   create: [LinkCreateWithoutPostedByInput!]
   delete: [LinkWhereUniqueInput!]
   connect: [LinkWhereUniqueInput!]
+  set: [LinkWhereUniqueInput!]
   disconnect: [LinkWhereUniqueInput!]
   update: [LinkUpdateWithWhereUniqueWithoutPostedByInput!]
   upsert: [LinkUpsertWithWhereUniqueWithoutPostedByInput!]
